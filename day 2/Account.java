@@ -1,0 +1,42 @@
+
+
+class BankAcc {
+    double balance;
+    public double calculateBalance(double balance){
+        return balance;
+    }
+}
+
+class savingacc extends BankAcc {
+    public double calculateBalance(double balance) {
+        return balance * 0.04;
+    }
+}
+
+class currentacc extends BankAcc {
+    
+    @Override
+    public double calculateBalance(double balance) {
+        return balance * 0.03;
+    }
+}
+
+class fixdisposit extends BankAcc {
+    @Override
+    public double calculateBalance(double balance) {
+        return balance * 0.065;
+    }
+}
+
+public class Account {
+    public static void main(String[] args) {
+        
+    
+    BankAcc a1 = new savingacc();
+System.out.println("balancein saving acc: "+a1.calculateBalance(10000));
+BankAcc a2 = new currentacc();
+System.out.println("balance current acc : "+a2.calculateBalance(10000));
+BankAcc a3 = new fixdisposit();
+a3.calculateBalance(10000);
+}
+}
