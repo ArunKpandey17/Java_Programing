@@ -17,7 +17,7 @@ public class FindSmall {
         int c = sc.nextInt();
         findsmallNum(a, b, c);
     }
-	public static void main(String[] args) {
-	
-	}
+//	public static void main(String[] args) {
+//	
+//	}
 }

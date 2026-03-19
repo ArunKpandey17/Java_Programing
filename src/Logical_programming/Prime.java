@@ -13,6 +13,6 @@ class Prime {
         Scanner S1 = new Scanner(System.in);
         System.out.println("Enter a number:");
         int num=S1.nextInt();
-        System.out.println(isPrime(52));
+        System.out.println(isPrime(num));
      }
 }
