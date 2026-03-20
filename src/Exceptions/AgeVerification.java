@@ -20,7 +20,7 @@ public class AgeVerification {
 		 
 	 }
 	public static void main(String[]args) {
-		voterights(15);
+		voterights(18);
 		
 	}
 
